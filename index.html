@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/af6c8e3518.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="generate-joke">
+        <div class="joke-wrapper">
+          <h3>msi 2020</h3>
+
+          <h2>Hey!</h2>
+          <p>Let’s try to find a joke for you:</p>
+          <div class="radio">
+            <label class="label">
+              <input type="radio" name="name1" id="radioRandom" />
+              <span class="fake"></span>
+              <span> Random</span>
+            </label>
+          </div>
+
+          <div class="radio" id="radioC">
+            <label class="label">
+              <input
+                type="radio"
+                name="name1"
+                id="radioCategories"
+                class="radioButton"
+              />
+              <span class="fake"></span>
+              <span> From categories</span>
+              <ul class="categories-list">
+                <li class="categories-list__item">animal</li>
+              </ul>
+            </label>
+          </div>
+
+          <div class="radio">
+            <label class="label">
+              <input type="radio" name="name1" id="radioSearch" />
+              <span class="fake"></span>
+              <span> Search</span>
+              <input
+                type="text"
+                name=""
+                id="search"
+                placeholder="Free text search..."
+              />
+            </label>
+          </div>
+          <input type="submit" value="Get a joke" id="getJoke" />
+
+          <div class="joke-list-container">
+            <ul class="joke-list">
+              <li class="joke-list__item">
+                <span class="joke-list__item-favourite-icon">
+                  <i class="far fa-heart" tabindex="0"></i>
+                </span>
+                <div class="joke-list__item-wrapper">
+                  <div class="joke-list__item-static-icon">
+                    <i class="far fa-comment-alt"></i>
+                  </div>
+                  <div class="joke-list__item-content">
+                    <h5 class="joke-list__item-id">
+                      ID:
+                      <a href="#"
+                        >XNaAxUduSw6zANDaIEab7A
+                        <i class="fas fa-external-link-alt"></i
+                      ></a>
+                    </h5>
+                    <p class="joke-list__item-text">
+                      No one truly knows who's Chuck Norris' real father. No one
+                      is biologically strong enough for this. He must've
+                      conceived himself.
+                    </p>
+                    <div class="joke-list__item-info">
+                      <h5 class="joke-list__item-date">
+                        Last update: <span> 1923 hours ago </span>
+                      </h5>
+                      <button class="joke-list__item-category">
+                        Celebrity
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="favourite">
+        <div class="favourite-wrapper">
+          <h3>Favourite</h3>
+        </div>
+      </section>
+    </main>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
