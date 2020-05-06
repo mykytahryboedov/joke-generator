@@ -166,6 +166,14 @@ input[name="name1"]:checked + .fake::before {
   padding: 40px 40px 40px 0;
 }
 
+.joke-list__item:not(:first-child){
+    margin-top: 20px;
+}
+
+.joke-list__item:last-child{
+    margin-bottom: 20px;
+}
+
 .joke-list__item-favourite-icon {
   display: flex;
   justify-content: flex-end;
